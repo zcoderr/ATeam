@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="200dp"
+    android:weightSum="3"
+    android:layout_height="150dp"
+    android:background="@color/colorPrimaryDark"
+    >
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:text="修改任务状态"
+            android:textSize="25dp"
+            android:textColor="@color/widowColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <EditText
+            android:id="@+id/et_new_status"
+            android:textColor="@color/widowColor"
+            android:textColorHint="@color/widowColor"
+            android:layout_centerHorizontal="true"
+            android:hint="输入目前该任务的状态"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <Button
+            android:id="@+id/btn_commit"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/widowColor"
+            android:layout_centerHorizontal="true"
+            android:text="修 改"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

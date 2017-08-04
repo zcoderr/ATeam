@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="200dp"
+    android:weightSum="3"
+    android:layout_height="150dp"
+    android:background="@color/colorPrimaryDark"
+    >
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:text="添加成员"
+            android:textSize="25dp"
+            android:textColor="@color/widowColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <EditText
+            android:id="@+id/et_user_email"
+            android:textColor="@color/widowColor"
+            android:textColorHint="@color/widowColor"
+            android:layout_centerHorizontal="true"
+            android:hint="输入要添加的用户邮箱"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <Button
+            android:id="@+id/btn_commit"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/widowColor"
+            android:layout_centerHorizontal="true"
+            android:text="邀请"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="5"
+    android:orientation="vertical"
+
+    tools:context="xyz.zhenhua.ateam.ui.account.RegisterActivity">
+    <LinearLayout
+        android:layout_weight="1"
+        android:background="@drawable/img_head"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </LinearLayout>
+    <!--登录区域-->
+    <LinearLayout
+        android:id="@+id/ln_login_area"
+        android:orientation="vertical"
+        android:layout_weight="3"
+        android:focusable="false"
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <RelativeLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img_icon_email"
+                    android:layout_toLeftOf="@+id/et_register_name"
+                    android:background="@drawable/icon_user"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <EditText
+                    android:id="@+id/et_register_name"
+                    android:hint="设置用户名"
+                    android:layout_centerInParent="true"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img_icon_user"
+                    android:layout_toLeftOf="@+id/et_register_mail"
+
+                    android:background="@drawable/icon_mail"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <EditText
+                    android:id="@+id/et_register_mail"
+                    android:hint="设置邮箱"
+                    android:layout_centerInParent="true"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <!--密码-->
+            <RelativeLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img_icon_lock"
+                    android:layout_toLeftOf="@+id/et_register_pass"
+                    android:background="@drawable/icon_lock"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <EditText
+                    android:id="@+id/et_register_pass"
+                    android:hint="设置密码"
+                    android:layout_centerInParent="true"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp">
+
+                <EditText
+                    android:id="@+id/et_authcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:hint="填写验证码" />
+
+                <Button
+                    android:id="@+id/btn_getcode"
+                    android:background="#0099FB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/et_authcode"
+                    android:text="获取" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!--登录注册按钮-->
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <Button
+            android:background="#0099FB"
+            android:id="@+id/btn_register"
+            android:textSize="18dp"
+            android:text="注    册"
+            android:layout_centerHorizontal="true"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

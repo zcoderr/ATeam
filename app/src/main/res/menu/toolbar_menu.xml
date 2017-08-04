@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/ic_add_circle_black_24dp"
+        android:orderInCategory="80"
+        android:title="创建任务"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/ic_msg_black_24dp"
+        android:orderInCategory="90"
+        android:title="分享"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:title="关于"
+        android:icon="@drawable/ic_account_box_black_24dp"
+        app:showAsAction="always" />
+
+
+</menu>

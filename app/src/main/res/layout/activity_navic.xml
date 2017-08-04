@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wel"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="xyz.zhenhua.ateam.ui.NavicActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#cccccc"
+        android:layout_height="50dp">
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btn_to_lgoinview"
+                android:background="#0099FB"
+                android:layout_centerInParent="true"
+                android:text="    登   录    "
+                android:layout_width="100dp"
+                android:layout_height="33dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <Button
+                android:background="#3C3D47"
+                android:id="@+id/btn_to_register_view"
+                android:text="    注   册    "
+                android:layout_centerInParent="true"
+                android:layout_width="100dp"
+                android:layout_height="33dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+

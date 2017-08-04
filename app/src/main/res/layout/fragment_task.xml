@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D6D6D6"
+    tools:context="xyz.zhenhua.ateam.ui.task.TaskFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:background="#A9A9A9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="任务列表" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/icv_tasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
